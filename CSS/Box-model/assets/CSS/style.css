@@ -1,0 +1,92 @@
+/* TITLE CODE */
+.jumbotron{
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* COMMON CODE */
+.cssPadding>h1, .cssBorder>h1, .cssMargin>h1{
+    background-color: rgb(0, 107, 107);
+    color: white;
+    border-radius: 5px;
+
+}
+
+/* CSS PADDING CODE P1*/
+.cssPadding>h1:nth-child(1){
+    padding: 50px; /*apply for all*/
+}
+
+.cssPadding>h1:nth-child(2){
+    padding: 25px 75px; /*apply for vertical horizontal sides*/
+}
+
+.cssPadding>h1:nth-child(3){
+    padding: 25px 50px 75px; /*apply for top horizontal bottom sides*/
+}
+
+.cssPadding>h1:nth-child(4){
+    padding: 25px 50px 75px 100px; /*apply for top right bottom and left sides*/
+}
+
+
+/* CSS BORDER CODE P2*/
+
+.cssBorder{
+    padding: 20px;
+}
+
+.cssBorder>h1:nth-child(1){
+    border: 5px solid rgb(17, 221, 34);  /*apply for all*/
+}
+
+.cssBorder>h1:nth-child(2){
+    border: 5px ;
+    border-color: brown blue; /*apply for vertical horizontal sides*/
+    border-style: solid;
+
+}
+
+.cssBorder>h1:nth-child(3){
+    border: 5px ;
+    border-color: brown blue purple;   /*apply for top horizontal bottom sides*/
+    border-style: solid;
+
+}
+
+.cssBorder>h1:nth-child(4){
+    border: 5px ;
+    border-color: brown blue purple green; /*apply for top right bottom and left sides*/
+    border-style: solid;
+}
+
+
+/* CSS MARGIN CODE P3 */
+.cssMargin>h1:nth-child(1){
+    margin: 50px; /*apply for all*/
+}
+
+.cssMargin>h1:nth-child(2){
+    margin: 25px 75px; /*apply for vertical horizontal sides*/
+}
+
+.cssMargin>h1:nth-child(3){
+    margin: 25px 50px 75px; /*apply for top horizontal bottom sides*/
+}
+
+.cssMargin>h1:nth-child(4){
+    margin: 25px 50px 75px 100px; /*apply for top right bottom and left sides*/
+}
+
+/* CSS BOX-MODEL CODE P4 */
+.cssBoxModel{
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 30px;
+    color: gray;
+}

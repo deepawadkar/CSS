@@ -1,0 +1,391 @@
+/*P1.html*/
+.title{
+    background-color: bisque;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title>h1{
+    color: orange;
+
+}
+.title>p{
+    color: azure;
+    font-size: 20px;
+}
+
+/* COMM0N CLASS */
+.common{
+    background-color: rgb(139, 195, 195);
+    padding: 50px;
+    margin: 50px;
+    border: 3px solid rgb(11, 10, 10);
+
+}
+
+.cssOutLine{
+    outline: 3px solid black;
+    border-radius: 10px;
+}
+
+/* P3.html */
+.cssOverflow>p{
+    text-align: justify;
+    line-height: 2;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
+.cssOverflow>p:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* P4.html */
+.cssWhitespace{
+    white-space:pre-wrap;
+}
+
+/*P5.html*/
+.cssUnits>h3:nth-child(1){
+    margin: 0.5in; /*Inches - 1in is equal to 2.54cm */
+}
+
+.cssUnits>h3:nth-child(2){
+    line-height: 3cm; /*Centimeters*/
+}
+
+.cssUnits>h3:nth-child(3){
+    word-spacing: 4mm; /*Millimeters */
+}
+
+.cssUnits>h3:nth-child(4){
+    font-size: 12pt; /*points */
+}
+
+.cssUnits>h3:nth-child(5){
+    font-size: 1pc; /* picas */
+}
+
+.cssUnits>h3:nth-child(6){
+    font-size: 12px; /* Pixel*/
+}
+
+
+/* P6.html */
+.cssVisibilityDisplay>.p{
+    background-color: teal;
+    padding: 20px;
+    border: 5px solid red;
+}
+
+.cssVisibilityDisplay>.cssVisibility{
+    visibility: hidden;
+}
+.cssVisibilityDisplay>.cssDisplay{
+    display: none;
+}
+
+
+/* P7.html */
+.cssWordWrap>p{
+background-color: gray;
+padding: 20px;
+width: 300px;
+word-wrap: break-word;
+}
+
+/* P8.html */
+.cssResize{
+    resize: both;
+    overflow: auto;
+}
+
+
+/* P9.html */
+.cssOffsetOutline{
+    outline: 3px solid black;
+    outline-offset: 10px;
+}
+
+
+/* P10.html */
+.cssColumnCount{
+line-height: 2;
+text-align: justify;
+/* column-count: 4; */
+/* column-fill: balance-all; */
+column-gap: 50px;
+column-rule: 2px solid black;
+column-width: 300px;
+}
+
+.cssColumnCount>h1{
+    column-span: all;
+}
+
+
+/* P11.html */
+.cssOpacity>p{
+    background-color: aqua;
+    columns: black;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.cssOpacity>div{
+    background-color: rgb(16, 242, 80);
+    columns: rgb(246, 242, 242);
+    padding: 20px;
+    
+}
+
+
+/* P12.html */
+/* EXAMPLE-1 */
+.cssAttribute>h1{
+color: brown;
+}
+.cssAttribute>p{
+    color: gray;
+}
+
+.cssAttribute>[title]{
+    background-color: yellow;
+}
+
+.cssAttribute>p[title]
+{
+    padding: 20px;
+}
+
+.cssAttribute>h1[title]{
+    font-style: italic;
+}
+
+/* EXAMPLE-2 */
+.cssAttribute>p>abbr[id]{
+    background-color: orangered;
+    color: blue;
+}
+
+/* EXAMPLE-3 */
+
+.cssAttribute>form>[type]{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.cssAttribute>form>[type="text"]{
+border: 2px solid red;
+border-radius: 5px;
+}
+
+.cssAttribute>form>[type="submit"]{
+    background-color: aquamarine;
+    border: 2px solid greenyellow;
+}
+
+
+/* P13.html */
+.cssAttribute>div>img[title ~= "natural"]{
+    border: 2px solid orangered;
+    padding: 20px;
+}
+
+
+/* P14.html */
+.cssAttribute>div>h3[title |='header']{
+    background-color:rgb(31, 192, 237);
+    padding: 20px;  
+}
+
+/* P15.html */
+.cssAttribute>section>h3[title ^='header']{
+    background-color: skyblue;
+    padding: 20px;
+}
+
+/* csscard1 */
+.css-card1>p{
+    
+    background-color: rgb(252, 251, 251);
+    padding: 20px;
+    color: black;
+    width: 100px;
+    word-wrap: break-word;
+}
+.css-card1>p>p{
+    background-color: rgb(252, 251, 251);
+    color: black;
+    padding: 20px;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+
+/* P16.html */
+.cssAttribute>div>p[title $='header']{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+
+/* P17.html */
+.cssAttribute>section>p[title *='te']{
+    background-color: rgb(88, 98, 239);
+    padding: 20px;
+}
+
+/* P18.html */
+.cssPsuedoClass>h1{
+    color: black;
+}
+
+
+.cssPsuedoClass>h1:hover{
+    color: blue;
+}
+.cssPsuedoClass>a:link{
+    color: aquamarine;
+
+}
+.cssPsuedoClass>a:hover{
+    color: blueviolet;
+}
+.cssPsuedoClass>a:active{
+    color: greenyellow;
+}
+.cssPsuedoClass>A:visited{
+    color: red;
+}
+
+
+/* P19.html */
+.cssPsuedoElement>section:first-child::first-line,
+.cssPsuedoElement>section:nth-child(2)::first-letter{
+    background-color: pink;
+    color: black;
+}
+.cssPsuedoElement>section:nth-child(2)::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+.cssPsuedoElement>section:last-child>h1::before{
+    content:befor h1;
+    background-color: yellow;
+    color: black;
+}
+
+.cssPsuedoElement>section:last-child>h1::before{
+    content:afrer h1;
+    background-color: rgb(12, 12, 10);
+    color: yellow;
+}
+/* P20.html */
+.cssPosition>h1:first-child, .cssPosition>div>h1:first-child{
+    background-color: rgb(41, 226, 226);
+}
+.cssPosition>h1:nth-child(2), .cssPosition>div>h1:nth-child(2){
+    background-color:goldenrod;
+}
+.cssPosition>h1:nth-child(3), .cssPosition>div>h1:nth-child(3){
+    background-color: orangered;
+}
+.cssPosition h1{
+    color: black;
+    padding: 20px;
+}
+.cssPosition>.second{
+    position :absolute;
+    left:0%;
+    top:0%;
+}
+
+.cssPosition>div>.fifth{
+    position :absolute;
+    right:0%;
+    top:0%;
+}
+
+.cssPosition>div{
+    position: relative;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.cssPosition>.seven{
+    background-color: blue;
+}
+
+.cssPosition>.eigth{
+    background-color: red;
+    position: sticky;
+    top: 0%;
+    bottom: 0% ;
+}
+
+.cssPosition>.nine{
+    background-color: rgb(61, 38, 47);
+    color: white;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    border-radius: 5px;
+    transition: 2s;
+
+}
+
+.cssPosition>.nine:hover{
+    right: 2%;
+}
+
+/* P21.html */
+.zIndex>section{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    color: rgb(17, 17, 17);
+    position: absolute;
+}
+
+.zIndex{
+    position: relative;
+    height: 300px;
+}
+.zIndex>.first{
+    background-color: rgb(7, 6, 4);
+    color: white;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.zIndex>.second{
+    background-color: rgb(26, 203, 206);
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.zIndex>.third{
+    background-color: rgb(238, 15, 15);
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.zIndex>.first:hover{
+    z-index: 4;
+}
+
+.zIndex>.second:hover{
+    z-index: 4;
+}
+

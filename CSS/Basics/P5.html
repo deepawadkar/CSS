@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination{
+            background-color: rgb(94, 177, 213);
+            color: black;
+            padding: 20px;
+        }
+        
+        .combination ~ h5{
+            color: #f60909;
+            background-color: aquamarine;
+        }
+
+        .combination ~ div>h5{
+            color: #0b0909;
+            background-color: rgb(101, 107, 216);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>There are 4 diffrent combinations in css..!</h1>
+    </center>
+
+    <hr>
+    <ol>
+        <li>Descendent Selector(USING SPACE)</li>
+        <li>Child Selector (USING > SYMBOL)</li>
+        <li>Adjacent Sibling Selector (Using + SYMBOL)</li>
+        <li>General Sibling Selector (USING ~ SYMBOL)</li>
+    </ol>
+    <hr>
+    <h1>General Sibling Selector (USING ~ SYMBOL)</h1>
+
+    <hr>
+    <section class="combination" id="Karan">
+        <h3>First H3 Tag..! (Child Element)</h3>
+        <p>First Paragraph..! (Child Element)</p>
+
+        <h3>2nd H3 Tag..! (Child Element)</h3>
+        <p>First Paragraph..! (Child Element)</p>
+
+
+        <h3>3rd H3 Tag..! (Child Element)</h3>
+        <p>First Paragraph..! (Child Element)</p>
+
+        <div>
+            <h3>4th H3 Tag..! (GrandChild Element)</h3>
+            <p>4th Paragraph..! (GrandChild Element)</p>
+        </div>
+
+        <h3>5th H3 Tag..! (Child Element)</h3>
+        <p>5th Paragraph..! (Child Element)</p>
+
+    </section>
+
+
+    <h5>1st H3 Tag..! (Child Element)</h5>
+    <p>First Paragraph..! (Child Element)</p>
+
+
+    <h5>2nd H3 Tag..! (Child Element)</h5>
+    <p>2nd Paragraph..! (Child Element)</p>
+
+    <div>
+        <h5>3rd H3 Tag..! (GrandChild Element)</h5>
+        <p>3rd Paragraph..! (GrandChild Element)</p>
+    </div>
+
+
+    <h5>4th H3 Tag..! (Child Element)</h5>
+    <p>4th Paragraph..! (Child Element)</p>
+    
+</body>
+</html>
